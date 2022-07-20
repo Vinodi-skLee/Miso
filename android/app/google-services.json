@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "829025823442",
+    "project_id": "miso-cfbff",
+    "storage_bucket": "miso-cfbff.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:829025823442:android:336bd1ab9534043ddcdb0b",
+        "android_client_info": {
+          "package_name": "com.example.miso"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "829025823442-0o70v4okn64dfa2e012ol7i8q8a1dtre.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.miso",
+            "certificate_hash": "9fa7a94fcc97f79456a24cd7801fd4d3fc89442b"
+          }
+        },
+        {
+          "client_id": "829025823442-t51mecn0an8hvvkf4e3a01cqm89jde2e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJqDBwa2iogbjvpgo-QvtRj8LeFCxnITo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "829025823442-t51mecn0an8hvvkf4e3a01cqm89jde2e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
