@@ -3,7 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:miso/LoginPage.dart';
 import 'package:get/get.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:miso/chat.dart';
 
+import 'notification.dart';
 import 'hamberger.dart';
 import 'Menu/appGuide.dart';
 import 'Menu/communication.dart';
@@ -26,9 +28,9 @@ class _MisoHomeState extends State<MisoHome> {
         centerTitle: true,
         actions: [
           IconButton(
-            icon: Icon(Icons.account_circle),
+            icon: Icon(Icons.notifications_none),
             onPressed: () {
-              Get.to(Login());
+              Get.to(Notice());
             },
           ),
         ],
@@ -44,31 +46,43 @@ class _MisoHomeState extends State<MisoHome> {
             ],
           )),
 
-      bottomNavigationBar: BottomNavigationBar(
-        type: BottomNavigationBarType.fixed,
-        backgroundColor: Color(0xff54AA8B),
+      bottomNavigationBar: BottomAppBar(
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            SizedBox(width: 30,),
+            IconButton(
+                onPressed: (){
+                  Get.to(MisoHome());
+                },
+                icon: Icon(Icons.home,
+                  color: Color(0xff54AA8B),)
+            ),
 
-        selectedItemColor: Colors.white,
-        unselectedItemColor: Colors.white.withOpacity(.60),
-        selectedFontSize: 14,
-        unselectedFontSize: 14,
+            Spacer(),
 
-        onTap: (int index) {
-        },
+            IconButton(
+                onPressed: (){
+                  Get.to(Chat());
+                },
+                icon: Icon(Icons.chat,
+                  color: Color(0xff54AA8B),)
+            ),
 
-        items: [
-          BottomNavigationBarItem(
-            // title: Text('Favorites'),
-              icon: Icon(Icons.home),
-              label: 'Home'
-          ),
-          BottomNavigationBarItem(
-            // title: Text('Music'),
-              icon: Icon(Icons.chat),
-              label: 'Chat'
-          ),
-        ],
+            Spacer(),
+
+            IconButton(
+                onPressed: (){
+                  Get.to(Login());
+                },
+                icon: Icon(Icons.account_circle,
+                  color: Color(0xff54AA8B),)
+            ),
+            SizedBox(width: 30,)
+          ],
+        ),
       ),
+
     );
   }
 }
