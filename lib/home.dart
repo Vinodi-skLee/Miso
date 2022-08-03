@@ -1,9 +1,11 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:miso/LoginPage.dart';
 import 'package:get/get.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
+import 'package:miso/chat.dart';
+import 'package:page_transition/page_transition.dart';
+import 'notification.dart';
 import 'hamberger.dart';
 import 'Menu/appGuide.dart';
 import 'Menu/communication.dart';
@@ -26,16 +28,29 @@ class _MisoHomeState extends State<MisoHome> {
         title: Text('MISO'),
         backgroundColor: Color(0xff54AA8B),
         centerTitle: true,
+        leading:
+          IconButton(
+            icon: Icon(Icons.menu),
+            onPressed: () {
+              Navigator.push(context,
+                  PageTransition(
+                    type: PageTransitionType.leftToRight,
+                    child: Hamberger(),
+                  )
+              );
+            },
+          ),
         actions: [
           IconButton(
-            icon: Icon(Icons.account_circle),
+            icon: Icon(Icons.notifications_none),
             onPressed: () {
-              Get.to(Login());
+              Get.to(Notice());
             },
           ),
         ],
       ),
-      drawer: Hamberger(),
+
+
       body: Container(
         margin: EdgeInsets.fromLTRB(15, 10, 15, 0),
         child: ListView(
@@ -468,7 +483,55 @@ class _MisoHomeState extends State<MisoHome> {
               icon: Icon(Icons.chat),
               label: 'Chat'),
         ],
+
+          child: Column(
+            children: [
+              Icon(
+                Icons.image,
+                size: 300,
+              ),
+            ],
+          )
       ),
+
+      bottomNavigationBar: BottomAppBar(
+        color: Color(0xff54AA8B),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            SizedBox(width: 30,),
+            IconButton(
+                onPressed: (){
+                  Get.to(MisoHome());
+                },
+                icon: Icon(Icons.home,
+                  color: Colors.white,)
+            ),
+
+            Spacer(),
+
+            IconButton(
+                onPressed: (){
+                  Get.to(Chat());
+                },
+                icon: Icon(Icons.chat_outlined,
+                  color: Colors.white,)
+            ),
+
+            Spacer(),
+
+            IconButton(
+                onPressed: (){
+                  Get.to(Login());
+                },
+                icon: Icon(Icons.account_circle_outlined,
+                  color: Colors.white,)
+            ),
+            SizedBox(width: 30,)
+          ],
+        ),
+      ),
+
     );
   }
 }
