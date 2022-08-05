@@ -29,17 +29,17 @@ class _MisoHomeState extends State<MisoHome> {
         backgroundColor: Color(0xff54AA8B),
         centerTitle: true,
         leading:
-          IconButton(
-            icon: Icon(Icons.menu),
-            onPressed: () {
-              Navigator.push(context,
-                  PageTransition(
-                    type: PageTransitionType.leftToRight,
-                    child: Hamberger(),
-                  )
-              );
-            },
-          ),
+        IconButton(
+          icon: Icon(Icons.menu),
+          onPressed: () {
+            Navigator.push(context,
+                PageTransition(
+                  type: PageTransitionType.leftToRight,
+                  child: Hamberger(),
+                )
+            );
+          },
+        ),
         actions: [
           IconButton(
             icon: Icon(Icons.notifications_none),
@@ -171,15 +171,7 @@ class _MisoHomeState extends State<MisoHome> {
                   ),
                 ),
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-                
-=======
 
->>>>>>> Stashed changes
-=======
-
->>>>>>> Stashed changes
                 //!!!!!! 복지 및 혜택
                 Container(
                   padding: EdgeInsets.fromLTRB(20, 20, 20, 0),
@@ -462,8 +454,6 @@ class _MisoHomeState extends State<MisoHome> {
                         ],
                       ),
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
 
                     ],
                   ),
@@ -474,42 +464,25 @@ class _MisoHomeState extends State<MisoHome> {
         ),
       ),
 
-=======
-=======
->>>>>>> Stashed changes
-
-                    ],
-                  ),
-                ),
-              ],
-            ),
-          ],
-        ),
-      ),
-
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
       //bottom bar 구현
       bottomNavigationBar: BottomNavigationBar(
-        type: BottomNavigationBarType.fixed,
-        backgroundColor: Color(0xff54AA8B),
-        selectedItemColor: Colors.white,
-        unselectedItemColor: Colors.white.withOpacity(.60),
-        selectedFontSize: 14,
-        unselectedFontSize: 14,
-        onTap: (int index) {},
-        items: [
-          BottomNavigationBarItem(
+          type: BottomNavigationBarType.fixed,
+          backgroundColor: Color(0xff54AA8B),
+          selectedItemColor: Colors.white,
+          unselectedItemColor: Colors.white.withOpacity(.60),
+          selectedFontSize: 14,
+          unselectedFontSize: 14,
+          onTap: (int index) {},
+          items: [
+            BottomNavigationBarItem(
               // title: Text('Favorites'),
-              icon: Icon(Icons.home),
-              label: 'Home'),
-          BottomNavigationBarItem(
+                icon: Icon(Icons.home),
+                label: 'Home'),
+            BottomNavigationBarItem(
               // title: Text('Music'),
-              icon: Icon(Icons.chat),
-              label: 'Chat'),
-        ],
+                icon: Icon(Icons.chat),
+                label: 'Chat'),
+          ],
 
           child: Column(
             children: [
