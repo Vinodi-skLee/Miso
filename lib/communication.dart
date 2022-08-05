@@ -8,15 +8,15 @@ import 'package:miso/LoginPage.dart';
 import 'package:miso/chat.dart';
 import 'package:miso/home.dart';
 
-class ConvenienceApp extends StatefulWidget {
-  const ConvenienceApp({Key? key}) : super(key: key);
+class CommunicationApp extends StatefulWidget {
+  const CommunicationApp({Key? key}) : super(key: key);
 
   //final user = FirebaseAuth.instance.currentUser;
   @override
-  State<ConvenienceApp> createState() => _ConvenienceAppState();
+  State<CommunicationApp> createState() => _CommunicationAppState();
 }
 
-class _ConvenienceAppState extends State<ConvenienceApp> {
+class _CommunicationAppState extends State<CommunicationApp> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

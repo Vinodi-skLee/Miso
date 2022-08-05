@@ -87,7 +87,9 @@ class _MisoHomeState extends State<MisoHome> {
                             width: 200,
                           ),
                           TextButton(
-                            onPressed: () {},
+                            onPressed: () {
+                              Get.to(CommunicationApp());
+                              },
                             style: TextButton.styleFrom(
                               primary: Colors.red,
                             ),
