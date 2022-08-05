@@ -453,8 +453,6 @@ class _MisoHomeState extends State<MisoHome> {
                           ),
                         ],
                       ),
-
-
                     ],
                   ),
                 ),
@@ -465,34 +463,33 @@ class _MisoHomeState extends State<MisoHome> {
       ),
 
       //bottom bar 구현
-      bottomNavigationBar: BottomNavigationBar(
-          type: BottomNavigationBarType.fixed,
-          backgroundColor: Color(0xff54AA8B),
-          selectedItemColor: Colors.white,
-          unselectedItemColor: Colors.white.withOpacity(.60),
-          selectedFontSize: 14,
-          unselectedFontSize: 14,
-          onTap: (int index) {},
-          items: [
-            BottomNavigationBarItem(
-              // title: Text('Favorites'),
-                icon: Icon(Icons.home),
-                label: 'Home'),
-            BottomNavigationBarItem(
-              // title: Text('Music'),
-                icon: Icon(Icons.chat),
-                label: 'Chat'),
-          ],
-
-          child: Column(
-            children: [
-              Icon(
-                Icons.image,
-                size: 300,
-              ),
-            ],
-          )
-      ),
+      // bottomNavigationBar: BottomNavigationBar(
+      //     type: BottomNavigationBarType.fixed,
+      //     backgroundColor: Color(0xff54AA8B),
+      //     selectedItemColor: Colors.white,
+      //     unselectedItemColor: Colors.white.withOpacity(.60),
+      //     selectedFontSize: 14,
+      //     unselectedFontSize: 14,
+      //     onTap: (int index) {},
+      //     items: [
+      //       BottomNavigationBarItem(
+      //         // title: Text('Favorites'),
+      //           icon: Icon(Icons.home),
+      //           label: 'Home'),
+      //       BottomNavigationBarItem(
+      //         // title: Text('Music'),
+      //           icon: Icon(Icons.chat),
+      //           label: 'Chat'),
+      //     ],
+      // child: Column(
+      //   children: [
+      //     Icon(
+      //       Icons.image,
+      //       size: 300,
+      //     ),
+      //   ],
+      // )
+      // ),
 
       bottomNavigationBar: BottomAppBar(
         color: Color(0xff54AA8B),
