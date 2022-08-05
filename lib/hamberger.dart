@@ -5,7 +5,7 @@ import 'package:miso/home.dart';
 import 'package:page_transition/page_transition.dart';
 
 import 'Menu/appGuide.dart';
-import 'Menu/communication.dart';
+import 'communication.dart';
 import 'Menu/learnSign.dart';
 
 class Hamberger extends StatelessWidget {

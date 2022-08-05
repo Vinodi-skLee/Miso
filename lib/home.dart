@@ -8,7 +8,7 @@ import 'package:page_transition/page_transition.dart';
 import 'notification.dart';
 import 'hamberger.dart';
 import 'Menu/appGuide.dart';
-import 'Menu/communication.dart';
+import 'communication.dart';
 import 'Menu/learnSign.dart';
 
 class MisoHome extends StatefulWidget {
