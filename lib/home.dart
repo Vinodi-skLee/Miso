@@ -171,7 +171,15 @@ class _MisoHomeState extends State<MisoHome> {
                   ),
                 ),
 
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
                 
+=======
+
+>>>>>>> Stashed changes
+=======
+
+>>>>>>> Stashed changes
                 //!!!!!! 복지 및 혜택
                 Container(
                   padding: EdgeInsets.fromLTRB(20, 20, 20, 0),
@@ -454,6 +462,8 @@ class _MisoHomeState extends State<MisoHome> {
                         ],
                       ),
 
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 
                     ],
                   ),
@@ -464,6 +474,23 @@ class _MisoHomeState extends State<MisoHome> {
         ),
       ),
 
+=======
+=======
+>>>>>>> Stashed changes
+
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          ],
+        ),
+      ),
+
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
       //bottom bar 구현
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
