@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:miso/LoginPage.dart';
 import 'package:get/get.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:carousel_slider/carousel_slider.dart';
 
 import 'package:miso/chat.dart';
 import 'package:miso/convenience.dart';
@@ -11,6 +12,12 @@ import 'hamberger.dart';
 import 'Menu/appGuide.dart';
 import 'communication.dart';
 import 'Menu/learnSign.dart';
+
+final imageList = [
+  Image.asset('assets/icon/disabled.jpg',fit: BoxFit.fill),
+  Image.asset('assets/icon/disabled2.jpg',fit: BoxFit.fill),
+  //Image.asset('assets/icon/miso.png',fit: BoxFit.fill),
+];
 
 class MisoHome extends StatefulWidget {
   const MisoHome({Key? key}) : super(key: key);
@@ -56,9 +63,27 @@ class _MisoHomeState extends State<MisoHome> {
           children: <Widget>[
             Column(
               mainAxisAlignment: MainAxisAlignment.start,
+
               children: [
-                Image.asset(
-                  'assets/icon/disabled2.jpg',
+                CarouselSlider(
+                    options: CarouselOptions(
+                      autoPlay: true,  //자동재생 여부
+                    ),
+                  items: imageList.map((image) {
+                    return Builder(
+                      builder: (BuildContext context) {
+                        return Container(
+                          width: MediaQuery.of(context).size.width,
+                          margin: EdgeInsets.symmetric(horizontal: 0.0),
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(10.0),
+                            child: image,
+                          ),
+                        );
+                      },
+                    );
+                  }).toList(),
+                  //item 리스트 항목 형성
                 ),
 
                 //!!!!!! 소통하기
