@@ -6,6 +6,7 @@ import 'package:carousel_slider/carousel_slider.dart';
 
 import 'package:miso/chat.dart';
 import 'package:miso/convenience.dart';
+import 'package:miso/welfare.dart';
 import 'package:page_transition/page_transition.dart';
 import 'notification.dart';
 import 'hamberger.dart';
@@ -222,111 +223,21 @@ class _MisoHomeState extends State<MisoHome> {
                               fontWeight: FontWeight.bold,
                             ),
                           ),
-                        ],
-                      ),
-                      SizedBox(
-                        height: 20,
-                      ),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          TextButton(
-                            onPressed: () {},
-                            style: TextButton.styleFrom(
-                              shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(10)),
-                              textStyle: const TextStyle(fontSize: 20),
-                              backgroundColor: Color(0xff54AA8B),
-                              primary: Colors.white,
-                              padding: EdgeInsets.fromLTRB(15, 20, 15, 20),
-                            ),
-                            child: Text("소득지원"),
-                          ),
                           SizedBox(
-                            width: 10,
+                            width: 175,
                           ),
                           TextButton(
-                            onPressed: () {},
+                            onPressed: () {
+                              Get.to(WelfareApp());
+                            },
                             style: TextButton.styleFrom(
-                              shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(10)),
-                              textStyle: const TextStyle(fontSize: 20),
-                              backgroundColor: Color(0xff54AA8B),
-                              primary: Colors.white,
-                              padding: EdgeInsets.fromLTRB(15, 20, 15, 20),
+                              primary: Colors.red,
                             ),
-                            child: Text("일상생활"),
-                          ),
-                          SizedBox(
-                            width: 10,
-                          ),
-                          TextButton(
-                            onPressed: () {},
-                            style: TextButton.styleFrom(
-                              shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(10)),
-                              textStyle: const TextStyle(fontSize: 20),
-                              backgroundColor: Color(0xff54AA8B),
-                              primary: Colors.white,
-                              padding: EdgeInsets.fromLTRB(15, 20, 15, 20),
-                            ),
-                            child: Text("건강의료"),
+                            child: Text("더 보기 >"),
                           ),
                         ],
                       ),
-                      SizedBox(
-                        height: 10,
-                      ),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          TextButton(
-                            onPressed: () {},
-                            style: TextButton.styleFrom(
-                              shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(10)),
-                              textStyle: const TextStyle(fontSize: 20),
-                              backgroundColor: Color(0xff54AA8B),
-                              primary: Colors.white,
-                              padding: EdgeInsets.fromLTRB(15, 20, 15, 20),
-                            ),
-                            child: Text("안전권익"),
-                          ),
-                          SizedBox(
-                            width: 10,
-                          ),
-                          TextButton(
-                            onPressed: () {},
-                            style: TextButton.styleFrom(
-                              shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(10)),
-                              textStyle: const TextStyle(fontSize: 20),
-                              backgroundColor: Color(0xff54AA8B),
-                              primary: Colors.white,
-                              padding: EdgeInsets.fromLTRB(15, 20, 15, 20),
-                            ),
-                            child: Text("주거지원"),
-                          ),
-                          SizedBox(
-                            width: 10,
-                          ),
-                          TextButton(
-                            onPressed: () {},
-                            style: TextButton.styleFrom(
-                              shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(10)),
-                              textStyle: const TextStyle(fontSize: 20),
-                              backgroundColor: Color(0xff54AA8B),
-                              primary: Colors.white,
-                              padding: EdgeInsets.fromLTRB(15, 20, 15, 20),
-                            ),
-                            child: Text("보육교육"),
-                          ),
-                        ],
-                      ),
-                      SizedBox(
-                        height: 20,
-                      ),
+
                       Row(
                         //mainAxisAlignment: MainAxisAlignment.start,
                         children: [
