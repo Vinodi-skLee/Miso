@@ -15,9 +15,9 @@ import 'communication.dart';
 import 'Menu/learnSign.dart';
 
 final imageList = [
-  Image.asset('assets/icon/disabled.jpg',fit: BoxFit.fill),
-  Image.asset('assets/icon/disabled2.jpg',fit: BoxFit.fill),
-  //Image.asset('assets/icon/miso.png',fit: BoxFit.fill),
+  Image.asset('assets/icon/main1.png', fit: BoxFit.fill),
+  Image.asset('assets/icon/main2.png', fit: BoxFit.fill),
+  //Image.asset('assets/icon/main3.png', fit: BoxFit.fill),
 ];
 
 class MisoHome extends StatefulWidget {
@@ -69,15 +69,24 @@ class _MisoHomeState extends State<MisoHome> {
                 CarouselSlider(
                     options: CarouselOptions(
                       autoPlay: true,  //자동재생 여부
+                      enlargeCenterPage: true,
                     ),
                   items: imageList.map((image) {
                     return Builder(
                       builder: (BuildContext context) {
                         return Container(
+                          decoration: BoxDecoration(
+                            //color: Color(0xff54AA8B),
+                            borderRadius: BorderRadius.circular(10), //모서리를 둥글게
+                            // border: Border.all(color: Colors.black, width: 1),
+                          ),
+                          //height: 700,
+                          //width: 1000,
                           width: MediaQuery.of(context).size.width,
-                          margin: EdgeInsets.symmetric(horizontal: 0.0),
+                          //padding: EdgeInsets.all(10),
+                          //margin: EdgeInsets.symmetric(horizontal: 10.0),
                           child: ClipRRect(
-                            borderRadius: BorderRadius.circular(10.0),
+                            borderRadius: BorderRadius.circular(20.0),
                             child: image,
                           ),
                         );
@@ -91,8 +100,9 @@ class _MisoHomeState extends State<MisoHome> {
                 Container(
                   padding: EdgeInsets.fromLTRB(20, 10, 0, 0),
                   decoration: BoxDecoration(
+                    color: Colors.white,
                     borderRadius: BorderRadius.circular(20), //모서리를 둥글게
-                    border: Border.all(color: Colors.black12, width: 2),
+                    border: Border.all(color: Colors.black12, width: 1),
                   ),
                   height: 150,
                   margin: EdgeInsets.fromLTRB(0, 10, 0, 0),
@@ -111,7 +121,7 @@ class _MisoHomeState extends State<MisoHome> {
                             ),
                           ),
                           SizedBox(
-                            width: 200,
+                            width: 180,
                           ),
                           TextButton(
                             onPressed: () {
@@ -202,12 +212,13 @@ class _MisoHomeState extends State<MisoHome> {
 
                 //!!!!!! 복지 및 혜택
                 Container(
-                  padding: EdgeInsets.fromLTRB(20, 20, 20, 0),
+                  padding: EdgeInsets.fromLTRB(20, 10, 20, 0),
                   decoration: BoxDecoration(
+                    color: Colors.white,
                     borderRadius: BorderRadius.circular(20), //모서리를 둥글게
-                    border: Border.all(color: Colors.black12, width: 2),
+                    border: Border.all(color: Colors.black12, width: 1),
                   ),
-                  height: 400,
+                  height: 220,
                   margin: EdgeInsets.symmetric(vertical: 10),
                   child: Column(
                     //mainAxisAlignment: MainAxisAlignment.start,
@@ -224,7 +235,7 @@ class _MisoHomeState extends State<MisoHome> {
                             ),
                           ),
                           SizedBox(
-                            width: 175,
+                            width: 155,
                           ),
                           TextButton(
                             onPressed: () {
@@ -373,7 +384,7 @@ class _MisoHomeState extends State<MisoHome> {
                             width: 20,
                           ),
                           Text(
-                            "장애인 아동들 보육 및 교육 관련 법 개...",
+                            "장애인 아동들 보육 및 교육 관련 법",
                             style: TextStyle(
                               fontSize: 15,
                               color: Color(0xff5C5C5C),
@@ -390,8 +401,9 @@ class _MisoHomeState extends State<MisoHome> {
                 Container(
                   padding: EdgeInsets.fromLTRB(20, 10, 20, 0),
                   decoration: BoxDecoration(
+                    color: Colors.white,
                     borderRadius: BorderRadius.circular(20), //모서리를 둥글게
-                    border: Border.all(color: Colors.black12, width: 2),
+                    border: Border.all(color: Colors.black12, width: 1),
                   ),
                   height: 430,
                   //margin: EdgeInsets.symmetric(vertical: 10),
@@ -410,7 +422,7 @@ class _MisoHomeState extends State<MisoHome> {
                             ),
                           ),
                           SizedBox(
-                            width: 165,
+                            width: 145,
                           ),
                           TextButton(
                             onPressed: () {
@@ -535,10 +547,11 @@ class _MisoHomeState extends State<MisoHome> {
                 Container(
                   padding: EdgeInsets.fromLTRB(20, 10, 20, 0),
                   decoration: BoxDecoration(
+                    color: Colors.white,
                     borderRadius: BorderRadius.circular(20), //모서리를 둥글게
-                    border: Border.all(color: Colors.black12, width: 2),
+                    border: Border.all(color: Colors.black12, width: 1),
                   ),
-                  height: 900,
+                  height: 920,
                   margin: EdgeInsets.symmetric(vertical: 10),
                   child: Column(
                     //mainAxisAlignment: MainAxisAlignment.start,
@@ -555,7 +568,7 @@ class _MisoHomeState extends State<MisoHome> {
                             ),
                           ),
                           SizedBox(
-                            width: 180,
+                            width: 160,
                           ),
                           TextButton(
                             onPressed: () {
@@ -570,7 +583,7 @@ class _MisoHomeState extends State<MisoHome> {
                       ),
 
                       Image.asset(
-                        'assets/icon/disabled.jpg', //width: 300,
+                        'assets/icon/hope1.jpg', //width: 300,
                       ),
                       SizedBox(
                         height: 10,
@@ -614,10 +627,10 @@ class _MisoHomeState extends State<MisoHome> {
                         ],
                       ),
                       SizedBox(
-                        height: 20,
+                        height: 40,
                       ),
                       Image.asset(
-                        'assets/icon/disabled.jpg', //width: 300,
+                        'assets/icon/hope2.jpg', //width: 300,
                       ),
                       SizedBox(
                         height: 10,
@@ -630,7 +643,7 @@ class _MisoHomeState extends State<MisoHome> {
                                 maxLines: 5,
                                 strutStyle: StrutStyle(fontSize: 16.0),
                                 text: TextSpan(
-                                    text: "[대구소식] 휠체어바이크 타고 45㎞ 달린 중증장애인… 민선8기 성공기원",
+                                    text: "73세, 청각장애를 딛고 노래하고 춤을 추다” 김순분의 『운명을 즈려밟고 인생에 도전한다』",
                                     style: TextStyle(
                                         color: Colors.black,
                                         height: 1.4,
@@ -650,8 +663,10 @@ class _MisoHomeState extends State<MisoHome> {
                                 maxLines: 5,
                                 strutStyle: StrutStyle(fontSize: 16.0),
                                 text: TextSpan(
-                                    text: "대구지체장애인협회 동구지회는 27일 민선8기 성공을 기원하며 휠체어 바이크 라이딩 행사를 열었다. "
-                                        "이날 행사에는 중증장애인 30여명이 참여했다. 이들은 팔공산에서 비슬산까지, 금호강에서 낙동강까지라는 문구가 적힌 깃발을 휠체어 바이크에 달고 대구 달성군청에서 동구청까지 45㎞를 이동했다.",
+                                    text: "[한국강사신문 김지영 기자] 70대의 내가 모델 워킹을 배우고, 기타와 드럼을 치며 노래를 하고,"
+                                        "듣지 못하는 장애 상태에서 들어야만 할 수 있는 것에 도전하며"
+                                        "성공하는 것을 보고 사람들이 모두 대단하다고 칭찬하듯 누군가에게는"
+                                        "나의 도전이 대단해 보일 수도 있고, 그리고 또 삶의 시련으로 지쳐 절망하고 그 지표를 잃어버린 어떤 누군가",
                                     style: TextStyle(
                                         color: Colors.black,
                                         height: 1.4,
