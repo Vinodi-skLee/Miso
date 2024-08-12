@@ -5,7 +5,7 @@
 
 ### 참여자
 
-| <img src="https://github.com/skLee-HGU.png" width="270" height="270"/> | <img src="https://github.com/eunaegong.png" width="270" height="270"/> | <img src="https://github.com/dazunx.png" width="270" height="270"/> |
+| <img src="https://github.com/Vinodi-skLee.png" width="270" height="270"/> | <img src="https://github.com/eunaegong.png" width="270" height="270"/> | <img src="https://github.com/dazunx.png" width="270" height="270"/> |
 | :--------------------------------------: | :--------------------------------------: | :--------------------------------------: |
 |             **이선경**              |             **조효은**              |             **이다정**              |
 
